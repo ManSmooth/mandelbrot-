@@ -17,4 +17,4 @@ you can change the starting x range in the form1.cs
 
 default [-2.5,1]
 
-y range is automatically calculated to match the aspect ratio
+y range is automatically calculated to match the aspect ratio of 1600x900
