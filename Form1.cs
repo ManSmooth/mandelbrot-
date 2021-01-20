@@ -42,16 +42,11 @@ namespace Project1
             Console.WriteLine(offsetx + "," + offsety);
             Console.WriteLine(scaling + " " + midx + " " + rangex);
             Console.WriteLine("LOADED");
-            this.uppodeto();
+            this.Uppodeto();
             this.KeyPress += pictureBox1_KeyPress;
         }
 
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uppodeto()
+        private void Uppodeto()
         {
             int[] numiterofpix = new Int32[maxiter];
             int[,] iterc = new Int32[1600,900];
@@ -101,7 +96,7 @@ namespace Project1
                 offsetx = midx - (rangex / 2);
                 rangey = image1.Height / scaling;
                 offsety = midy - (rangey / 2);
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == '-')
             {
@@ -110,43 +105,43 @@ namespace Project1
                 offsetx = midx - (rangex / 2);
                 rangey = image1.Height / scaling;
                 offsety = midy - (rangey / 2);
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == 'w')
             {
                 midy -= (400 / scaling) / 2;
                 offsety = midy - (rangey / 2);
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == 'a')
             {
                 midx -= (400 / scaling) / 2;
                 offsetx = midx - (rangex / 2);
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == 's')
             {
                 midy += (400 / scaling) / 2;
                 offsety = midy - (rangey / 2);
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == 'd')
             {
                 midx += (400 / scaling) / 2;
                 offsetx = midx - (rangex / 2);
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == 'q')
             {
                 tempiter /= 2;
                 maxiter = (int)tempiter;
-                this.uppodeto();
+                this.Uppodeto();
             }
             if (e.KeyChar == 'e')
             {
                 tempiter *= 2;
                 maxiter = (int)tempiter;
-                this.uppodeto();
+                this.Uppodeto();
             }
         }
     }

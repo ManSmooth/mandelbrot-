@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using System;
 
 namespace Project1
 {
@@ -60,6 +61,11 @@ namespace Project1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            
         }
 
         #endregion
