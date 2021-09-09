@@ -3,7 +3,7 @@ a side project (1st C# proj)
 
 ## stuffs to know
 
-w,a,s,d to control direction (moves 400 pixels to the direction)
+w,a,s,d to control direction (moves quarter of the screen to the direction)
 
 -,+ change the scaling by the multiplier of 2
 
